@@ -1,0 +1,122 @@
+/*Name:Mogulla Bhanu Prakash Reddy*/
+/*Id:0935340*/
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color for the entire page */
+body {
+    background-color: #f0f0f0; /* Example color */
+}
+
+/* Style the header section */
+header {
+    background-color: #333; /* Example color */
+    color: #fff; /* Example color */
+    text-align: center;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Example color */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ff0; /* Example color */
+}
+
+/* Style the about section */
+#about {
+    margin: 20px;
+}
+
+#about h2 {
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Arrange the portfolio projects in a grid layout */
+#portfolio {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    background-color: #fff; /* Example color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+/* Style the contact form */
+#contact {
+    margin: 20px;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Example color */
+    border-radius: 5px;
+}
+
+#contact button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333; /* Example color */
+    color: #fff; /* Example color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
